@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>Encuesta</title>
+</head>
+<body style="background-color:pink;">
+
+<center><h1 id="encabezado">Encuesta de cine</h1></center>
+<form id="formulario" name="formulario" method="post" action="pruebap.php" target= "_blank">
+<fieldset id="datosPersonales">
+<legend>Datos personales</legend>
+<label for="nombre">Nombre:</label><br>
+<input type="text" name="nombre" id="nombre"><br>
+<label for="apellidos">Apellidos:</label><br>
+<input type="text" name="apellidos" id="apellidos"><br>
+<label for="edad">Edad:</label><br>
+<input type="text" name="edad" id="edad" size="2" maxlength="2"><br>
+<label for="sexo">Sexo:</label><br>
+<select id="sexo" name="sexo">
+<option value="X" selected="selected">...</option>
+<option value="M">Masculino</option>
+<option value="F">Femenino</option>
+</select>
+</fieldset>
+<fieldset id="MejorPelicula">
+<legend>Mejor Pel&iacute;cula</legend>
+<input type="radio" name="pelicula" value="1">Yo antes de ti<br>
+<input type="radio" name="pelicula" value="2">En busca de la felicidad<br>
+<input type="radio" name="pelicula" value="3">Bird box<br>
+<input type="radio" name="pelicula" value="4">La vida es bella<br>
+<input type="radio" name="pelicula" value="5">Crepusculo<br>
+</fieldset>
+<fieldset id="opinion">
+<legend>Tu opini&oacute;n sobre la pel&iacute;cula</legend>
+<textarea id="opinion" name="opinion" rows="10" cols="50"></textarea>
+</fieldset>
+</br>
+<input type="reset" value="Borrar formulario"><input type="submit" value="Enviar">
+</form>
+</body>
+</html>
